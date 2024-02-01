@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&family=Noto+Sans+Display:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --first_font_size: 40px;
+    --second_font_size: 30px;
+    --third_font_size: 22px;
+    --fourth_font_size: 20px;
+
+    --card_bc: #DDCFC6;
+}
+
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+  
+html,body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color:#f5e3e3ff;
+}
+
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+  
+ul{
+    padding: 0;
+    list-style: none;
+  }
+  
+a{
+    text-decoration: none;
+}
+  
+img{
+    max-width: 100%;
+    height: auto;
+}
+.main_container{
+    padding: 3rem;
+}
+.main_column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.main_column_2{
+    text-align: center;
+}
+.main_subtitle{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Nono Sans Display', sans-serif;
+    font-weight: 600;
+}
+.main_title{
+    margin-top: 15px;
+    font-size: var(--third_font_size);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.myDiv{
+    display: grid;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    background-color: var(--card_bc);
+    padding: 30px;
+    transition: .5s;
+    border-radius: 35px;
+}  
+.myDiv:hover{
+    background-color: #ccb8ab;
+}
+.card_subtitle{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Noto Sans',sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card_title{
+    opacity: 80%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card_title_2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 100%;
+    font-size: 20px;
+}
+.cl{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.main_title_2{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.myDiv_2{
+    display: none;
+}
+.myDiv_3{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 40px;
+    border: none;
+    background-color: var(--card_bc);
+    padding: 40px;
+    transition: .5s;
+    border-radius: 35px;
+}
+.myDiv_3:hover{
+    background-color: #ccb8ab;
+}
+
+
+@media screen and (max-width: 768px) {
+    .myDiv_3{
+        display: none;
+    }
+    .cl{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card_subtitle{
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Noto Sans',sans-serif;
+    }
+    .card_title{
+        opacity: 80%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    }
+    .card_title_2{
+        opacity: 80%;
+        font-size: 16px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    }
+    .myDiv_2{
+        display: block;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        border: none;
+        background-color: var(--card_bc);
+        transition: .5s;
+        border-radius: 35px;
+        text-align: center;
+    }
+    .img{
+        background-image: none;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .main_subtitle{
+        font-size: 30px;
+    }
+    .main_title{
+        font-size: 15px;
+    }
+    .main_container{
+        padding: 2rem;
+    }
+    /* .card_subtitle{
+        font-size: 15px; 
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Noto Sans',sans-serif;
+    }
+    .card_title_2{
+        font-size: 16px;    
+        opacity: 80%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } */
+    .myDiv{
+        padding: 20px;
+    }
+    .myDiv_2{
+        display: block;
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        border: none;
+        background-color: var(--card_bc);
+        transition: .5s;
+        border-radius: 35px;
+        text-align: center;
+    }
+}
